@@ -1,0 +1,10 @@
+﻿@using MVC6AMDonBatch.Models;
+@model EmpDeptModel
+ 
+
+@Html.Partial("_EmployeePartialView", Model.EmployeeModels)
+
+@Html.Partial("_DepartmentPartialView", Model.DepartmentModels)
+<br />
+
+@{Html.RenderPartial("_DepartmentPartialView", Model.DepartmentModels);}

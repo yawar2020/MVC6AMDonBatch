@@ -1,0 +1,24 @@
+﻿@using MVC6AMDonBatch.Models;
+@model List<EmployeeModel>
+@{
+    ViewBag.Title = "Employeeinfo";
+    var Emp = ViewBag.Empinfo;
+}
+
+<h2>Employeeinfo</h2>
+
+@*@Emp.Empid<br />
+@Emp.EmpName<br />
+@Emp.EmpSalary*@           
+
+@*@Model.Empid<br />
+@Model.EmpName<br />
+@Model.EmpSalary<br />*@
+
+@foreach (var item in Model)
+{
+    @item.Empid<br />
+    @item.EmpName<br />
+    @item.EmpSalary<br /><br /><br />
+
+}
