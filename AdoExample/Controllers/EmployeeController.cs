@@ -14,5 +14,27 @@ namespace AdoExample.Controllers
         {
             return View(db.GetEmployee().ToList());
         }
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Create(FormCollection frm)
+        {
+            Employee obj = new Employee();
+            obj.EmpName =frm["EmpName"];
+            obj.EmpSalary =Convert.ToInt32(frm["EmpSalary"]);
+            int i = db.SaveEmployee(obj);
+            if (i > 0)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+            }
+           
+        }
     }
 }
