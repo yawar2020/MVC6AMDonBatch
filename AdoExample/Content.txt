@@ -1,0 +1,8 @@
+﻿Crud operation using ado.net with store proc
+Model view Controller Brief
+Routing
+github
+htppget and httppost verbs
+ActionResult
+ViewData
+ViewBag

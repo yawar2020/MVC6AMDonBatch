@@ -81,5 +81,17 @@ namespace AdoExample.Controllers
             }
 
         }
+
+        public ActionResult GetViewDataExample()
+        {
+            List<string> obj = new List<string>();
+            obj.Add("pratiusha");
+            obj.Add("deepti");
+            obj.Add("Nagini");
+            obj.Add("Anusha");
+            //  ViewData["Student"] = obj;
+            ViewBag.student = obj;
+            return View();
+        }
     }
 }
