@@ -1,0 +1,14 @@
+﻿@model AdoExample.Models.Employee
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>delete</h2>
+
+EmpName:@Model.EmpName
+<br />
+EmpSalary:@Model.EmpSalary<br />
+<form action="~/Employee/Delete/@Model.EmpId" method="post">
+   
+    <input type="submit" value="delete" />
+</form>

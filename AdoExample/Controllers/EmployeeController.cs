@@ -36,5 +36,50 @@ namespace AdoExample.Controllers
             }
            
         }
+
+        [HttpGet]
+        public ActionResult Edit(int ? id)
+        {
+            Employee emp = db.GetEmployeebyId(id);
+            return View(emp);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Employee emp)
+        {
+            int i = db.EditEmployee(emp);
+            if (i > 0)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+            }
+
+        }
+
+        [HttpGet]
+        public ActionResult Delete(int? id)
+        {
+            Employee emp = db.GetEmployeebyId(id);
+            return View(emp);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        public ActionResult DeleteConfirmed(int? id)
+        {
+            int i = db.DeleteEmployee(id);
+            if (i > 0)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+            }
+
+        }
     }
 }

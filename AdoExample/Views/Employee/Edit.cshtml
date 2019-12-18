@@ -1,0 +1,15 @@
+﻿@model AdoExample.Models.Employee
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form action="~/Employee/Edit" method="post">
+ <input type="hidden" value="@Model.EmpId" name="EmpId" />
+       <label>EmpName</label>
+    <input type="text" id="EmpName" name="EmpName"  value="@Model.EmpName"/><br />
+    <label>EmpSalary</label>
+    <input type="text" id="EmpSalary" name="EmpSalary" value="@Model.EmpSalary" /><br />
+    <input type="submit" value="Edit" />
+</form>
