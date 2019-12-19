@@ -93,5 +93,17 @@ namespace AdoExample.Controllers
             ViewBag.student = obj;
             return View();
         }
+        public ActionResult getTempData() {
+            TempData["Name"] = "Hello World";
+            return RedirectToAction("getTempData1");
+        }
+        public ActionResult getTempData1()
+        {
+            //string s=TempData["Name"].ToString();
+            //TempData.Keep();
+            string s = TempData.Peek("Name").ToString();
+            ViewBag.info = s;
+            return View();
+        }
     }
 }

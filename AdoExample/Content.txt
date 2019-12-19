@@ -6,3 +6,5 @@ htppget and httppost verbs
 ActionResult
 ViewData
 ViewBag
+TempData
+Layout

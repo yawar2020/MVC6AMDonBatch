@@ -166,6 +166,7 @@
     <Content Include="Views\Employee\Edit.cshtml" />
     <Content Include="Views\Employee\Delete.cshtml" />
     <Content Include="Views\Employee\GetViewDataExample.cshtml" />
+    <Content Include="Views\Employee\getTempData1.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
