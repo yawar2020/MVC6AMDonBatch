@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC6AMDonBatch", "MVC6AMDon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoExample", "AdoExample\AdoExample.csproj", "{953891BE-0417-4391-B22E-DFFCE48C2B8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseFirstApproach", "DatabaseFirstApproach\DatabaseFirstApproach.csproj", "{C432AF80-A603-4B26-AAB1-F44C8ADF1BF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{953891BE-0417-4391-B22E-DFFCE48C2B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{953891BE-0417-4391-B22E-DFFCE48C2B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{953891BE-0417-4391-B22E-DFFCE48C2B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C432AF80-A603-4B26-AAB1-F44C8ADF1BF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C432AF80-A603-4B26-AAB1-F44C8ADF1BF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C432AF80-A603-4B26-AAB1-F44C8ADF1BF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C432AF80-A603-4B26-AAB1-F44C8ADF1BF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
