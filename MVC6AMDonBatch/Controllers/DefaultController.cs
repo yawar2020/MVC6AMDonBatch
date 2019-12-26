@@ -180,5 +180,14 @@ namespace MVC6AMDonBatch.Controllers
                 return Content("Hello World");
             }
         }
+
+        public ActionResult SectionExample()
+        {
+            return View();
+        }
+        public ActionResult SectionExample2()
+        {
+            return View();
+        }
     }
 }

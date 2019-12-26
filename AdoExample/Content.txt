@@ -9,3 +9,5 @@ ViewBag
 TempData
 Layout
 Databased First approach
+Model Based Approach
+Codefirst Approach

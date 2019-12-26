@@ -28,13 +28,7 @@
 
     <div class="container body-content">
         @RenderBody()
-        <br />
-        @if (IsSectionDefined("mySection")) {
-        @RenderSection("mySection", false)}
-        else {<p>No Section is defined</p> }
-        <br />
         <hr />
-        
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
